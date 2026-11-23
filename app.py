@@ -31,10 +31,7 @@ def get_students():
 
 # UPDATE
 def update_student(name, new_name):
-    students.update_one(
-        {"name": name},
-        {"$set": {"name": new_name}}
-    )
+    students.update_one({"name": name}, {"$set": {"name": new_name}})
 
 
 # DELETE
@@ -43,3 +40,4 @@ def delete_student(name):
 
 
 print(get_students())
+create_student("Al")
