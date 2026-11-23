@@ -40,4 +40,4 @@ def delete_student(name):
 
 
 print(get_students())
-create_student("Al")
+create_student("Ali")
